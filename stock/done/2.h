@@ -1,0 +1,324 @@
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <iomanip>
+#include <vector>
+#include <algorithm>
+#include <queue>
+#include <unordered_map>
+#include <unordered_set>
+#include <cmath>
+#include <stdexcept>
+#define MAXSIZE 5000
+using namespace std;
+
+typedef struct stockdetail{
+	string date;//日期 
+	double openprice;//开盘价
+	double closeprice;//收盘价
+	double highest;//最高价
+	double lowest;//最低价
+	double volume;//成交量
+	double turnover;//成交额
+	string changerate;//换手率
+	string risefallrate;//涨跌幅
+	double risefallamount;//涨跌额
+}stockdetail;//股票的价格信息 
+
+typedef struct stock{
+	string stockcode;//股票代码
+	string indusname;//股票简称
+	string sname;//英文名 
+	string briname;//行业编码
+    string pricate;//一级门类（即行业大类）
+    string seccate;//二级门类（即行业二级类）
+    string listexchange;//上市交易所
+    string wholecompany;//公司全称（即机构名称）
+	string launchdate;//上市日期
+	string provin;//省份
+	string city;//城市
+	string legalper;//法人
+	string addr;//地址
+	string url;//网址
+	string email;//邮箱
+	string callnum;//电话
+	string mainbus;//主营业务
+	string scopeofbus;//经营范围
+	stockdetail *detail;//定义一个stockdetail类型的数组用来存放该股票每一日的相关价格信息  
+	int detail_count;//detail数组的长度 
+}stock;
+
+typedef struct {
+    stock* elem;                 // 指向数组的指针
+    int length;                 // 数组的长度
+} SqList;
+void InitList(SqList& L) {
+// 使用动态内存分配new进行初始化
+    L.elem = new stock[MAXSIZE];
+    L.length = 0;
+}
+
+void FreeList(SqList& L) {
+// 释放内存
+    delete[] L.elem;
+    L.length = 0;
+}
+
+void ReadDetail(stock& s, string detailDir) {
+// 从Detail文件夹中读取Detail信息
+string filename = detailDir + "/" + s.stockcode + ".txt";
+    ifstream file;
+    file.open(filename.c_str());
+    
+    if (!file.is_open()) {
+        s.detail_count = 0;
+        s.detail = nullptr;
+        return;
+    }
+
+    vector<stockdetail> details;
+    string line;
+    
+    while (getline(file, line)) {
+        if (line.empty()) continue;
+
+        for (char& c : line) {
+            if (c == ';') c = ' ';
+        }
+
+        stockdetail detail;
+        stringstream ss(line);
+
+        ss >> detail.date;
+        ss >> detail.openprice;
+        ss >> detail.closeprice;
+        ss >> detail.highest;
+        ss >> detail.lowest;
+        ss >> detail.volume;
+        ss >> detail.turnover;
+        ss >> detail.changerate;
+        ss >> detail.risefallrate;
+        ss >> detail.risefallamount;
+
+        details.push_back(detail);
+    }
+    file.close();
+
+    s.detail_count = details.size();
+    s.detail = new stockdetail[s.detail_count];
+    for (int i = 0; i < details.size(); i++) {
+        s.detail[i] = details[i];
+    }
+}
+
+void ReadFile(SqList& L, string infoFilename, string detailDir) {
+// 从文件中读取股票信息，将其按顺序存入L.elem指向的数组中，数组下标从1开始存储
+    ifstream infile;
+    infile.open(infoFilename.c_str());
+    
+    if (!infile.is_open()) {
+        cout << "文件打开失败" << endl;
+        return;
+    }
+
+    char buffer[5000];
+    bool flag = false;
+    
+    while (infile.getline(buffer, sizeof(buffer), '#')) {
+        stock temp;
+        stringstream streams(buffer);
+        string ss;
+        int type = 0;
+        
+        if (flag) {
+            getline(streams, ss, '\n');
+        }
+        flag = true;
+        
+        while (getline(streams, ss, '\n')) {
+            if (ss.empty()) continue;
+            
+            switch (type) {
+                case 0:  // CODE
+                    temp.stockcode = ss.substr(5);
+                    break;
+                case 1:  // 股票简称
+                    temp.indusname = ss.substr(13);
+                    break;
+                case 2:  // 英文名
+                    temp.sname = ss.substr(10);
+                    break;
+                case 5:  // 行业编码
+                    temp.briname = ss.substr(13);
+                    break;
+                case 6:  // 一级门类
+                    temp.pricate = ss.substr(13);
+                    break;
+                case 7:  // 二级门类
+                    temp.seccate = ss.substr(16);
+                    break;
+                case 4:  // 上市交易所
+                    temp.listexchange = ss.substr(16);
+                    break;
+                case 3:  // 公司全称
+                    temp.wholecompany = ss.substr(13);
+                    break;
+                case 8:  // 上市日期
+                    temp.launchdate = ss.substr(13);
+                    break;
+                case 9:  // 省份
+                    temp.provin = ss.substr(7);
+                    break;
+                case 10: // 城市
+                    temp.city = ss.substr(7);
+                    break;
+                case 11: // 法人
+                    temp.legalper = ss.substr(7);
+                    break;
+                case 12: // 地址
+                    temp.addr = ss.substr(7);
+                    break;
+                case 13: // 网址
+                    temp.url = ss.substr(7);
+                    break;
+                case 14: // 邮箱
+                    temp.email = ss.substr(7);
+                    break;
+                case 15: // 电话
+                    temp.callnum = ss.substr(7);
+                    break;
+                case 16: // 主营业务
+                    temp.mainbus = ss.substr(13);
+                    break;
+                case 17: // 经营范围
+                    temp.scopeofbus = ss.substr(13);
+                    break;
+                default:
+                    break;
+            }
+            type++;
+        }
+        
+        ReadDetail(temp, detailDir);
+        L.elem[L.length] = temp;
+        L.length++;
+    }
+    infile.close();
+}
+
+void SaveFile(SqList& L, string filename) {
+// 保存基本信息到new_stocks.txt
+ofstream out(filename.c_str());
+    for(int i=0;i<L.length;i++)
+    {
+        out<<"CODE:"<<L.elem[i].stockcode<<endl;
+        out<<"股票简称:"<<L.elem[i].indusname<<endl;
+        out<<"英文名:"<<L.elem[i].sname<<endl;
+        out<<"机构名称:"<<L.elem[i].wholecompany<<endl;
+        out<<"上市交易所:"<<L.elem[i].listexchange<<endl;
+        out<<"行业编码:"<<L.elem[i].briname<<endl;
+        out<<"行业大类:"<<L.elem[i].pricate<<endl;
+        out<<"行业二级类:"<<L.elem[i].seccate<<endl;
+        out<<"上市日期:"<<L.elem[i].launchdate<<endl;
+        out<<"省份:"<<L.elem[i].provin<<endl;
+        out<<"城市:"<<L.elem[i].city<<endl;
+        out<<"法人:"<<L.elem[i].legalper<<endl;
+        out<<"地址:"<<L.elem[i].addr<<endl;
+        out<<"网址:"<<L.elem[i].url<<endl;
+        out<<"邮箱:"<<L.elem[i].email<<endl;
+        out<<"电话:"<<L.elem[i].callnum<<endl;
+        out<<"主营业务:"<<L.elem[i].mainbus<<endl;
+        out<<"经营范围:"<<L.elem[i].scopeofbus<<endl;
+        if(i!=L.length-1)
+            out<<"#"<<endl;
+    }
+    out.close();
+
+}
+
+void SaveDetail(SqList& L, string detailDir) {
+//保存detail信息到new_detail文件夹
+for(int i=0;i<L.length;i++)
+    {
+        string filename = detailDir + "/" + L.elem[i].stockcode + ".txt";
+        ofstream file(filename.c_str());
+        for(int j=0;j<L.elem[i].detail_count;j++)
+        {
+            file<<fixed<<setprecision(3);
+            file<<L.elem[i].detail[j].date<<";";
+            file<<L.elem[i].detail[j].openprice<<";";
+            file<<L.elem[i].detail[j].closeprice<<";";
+            file<<L.elem[i].detail[j].highest<<";";
+            file<<L.elem[i].detail[j].lowest<<";";
+            file<<L.elem[i].detail[j].volume<<";";
+            file<<L.elem[i].detail[j].turnover<<";";
+            file<<L.elem[i].detail[j].changerate<<";";
+            file<<L.elem[i].detail[j].risefallrate<<";";
+            file<<L.elem[i].detail[j].risefallamount<<endl;
+        }
+        file.close();
+    }
+
+}
+
+stock* DeleteStock(SqList& L, string indusname) {
+//在顺序表L中删除简称为indusname的股票
+stock* L1 = new stock;//先开辟空间
+    for(int i = 0;i<L.length;i++)
+    {
+       if(L.elem[i].indusname == indusname)
+        {
+            *L1 = L.elem[i];
+            for(int j = i+1;j<L.length;j++)
+            L.elem[j-1] = L.elem[j];
+            L.length--;
+            return L1;
+        }
+    }
+    return NULL;
+
+}
+void Print(stock *s) 
+{// 输出股票信息，double类型变量保留3位小数，详见输出样例
+if(s == nullptr)  // 检查空指针
+    {
+        cout << "删除失败" << endl;
+        return;
+    }
+    
+    cout<<"股票代码: "<<s->stockcode<<endl;
+    cout<<"股票简称: "<<s->indusname<<endl;
+    cout<<"英文名: "<<s->sname<<endl;
+    cout<<"行业编码: "<<s->briname<<endl;
+    cout<<"一级门类: "<<s->pricate<<endl;
+    cout<<"二级门类: "<<s->seccate<<endl;
+    cout<<"上市交易所: "<<s->listexchange<<endl;
+    cout<<"公司全称: "<<s->wholecompany<<endl;
+    cout<<"上市日期: "<<s->launchdate<<endl;
+    cout<<"省份: "<<s->provin<<endl;
+    cout<<"城市: "<<s->city<<endl;
+    cout<<"法人: "<<s->legalper<<endl;
+    cout<<"地址: "<<s->addr<<endl;
+    cout<<"网址: "<<s->url<<endl;
+    cout<<"邮箱: "<<s->email<<endl;
+    cout<<"电话: "<<s->callnum<<endl;
+    cout<<"主营业务: "<<s->mainbus<<endl;
+    cout<<"经营范围: "<<s->scopeofbus<<endl;
+
+    for(int i=0;i<s->detail_count;i++)
+    {
+        stockdetail detail = s->detail[i];
+        cout<<fixed<<setprecision(3);
+        cout<<"日期: "<<detail.date;
+        cout<<" 开盘价: "<<detail.openprice;
+        cout<<" 收盘价: "<<detail.closeprice;
+        cout<<" 最高价: "<<detail.highest;
+        cout<<" 最低价: "<<detail.lowest;
+        cout<<" 成交量: "<<detail.volume;
+        cout<<" 成交额: "<<detail.turnover;
+        cout<<" 换手率: "<<detail.changerate;
+        cout<<" 涨跌幅: "<<detail.risefallrate;
+        cout<<" 涨跌额: "<<detail.risefallamount<<endl;
+    }
+
+}

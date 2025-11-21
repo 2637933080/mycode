@@ -1,0 +1,27 @@
+{
+  "users": {
+    "123": "pbkdf2:sha256:260000$LETLBcWAo6nIcwt0$8fb95d32b083f4a499a211267064a00a9021e01345dd89e80becac30f65ac400",
+    "gdpu": "pbkdf2:sha256:260000$GbNPR0JnCM6wQDB7$65cb56e6df06f7d0bca4338dbb6d93d1643711404ca0afc50dc58c8da2ee6180"
+  },
+  "tokens": {
+    "2c8d454c-ddfb-431f-8ea6-13c7f174c14a": "123",
+    "319b3b53-37c6-4775-89ee-e7ea9c2e7608": "gdpu"
+  },
+  "favorites": {
+    "123": [],
+    "gdpu": [
+      {
+        "id": "aaacf8d8-8462-42cd-a1a8-69791cf4c8c8",
+        "name": "学校",
+        "lat": 22.47942561768721,
+        "lng": 113.40896098863628
+      },
+      {
+        "id": "a247a5ef-d2de-43c3-b062-e8640a890ca9",
+        "name": "公园",
+        "lat": 22.510828420958706,
+        "lng": 113.40534768261944
+      }
+    ]
+  }
+}
