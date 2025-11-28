@@ -1,0 +1,183 @@
+Running '1'
+17:17:35
+1.
+open on /study/ OK
+17:17:35
+2.
+setWindowSize on 1555x840 OK
+17:17:38
+3.
+pause with value 5000 OK
+17:17:41
+4.
+click on linkText=Undergraduate OK
+17:17:44
+5.
+pause with value 5000 OK
+17:18:46
+6.
+click on linkText=Courses OK
+17:18:49
+7.
+pause with value 5000 OK
+17:20:16
+8.
+click on css=.more OK
+17:20:19
+9.
+pause with value 5000 OK
+17:21:24
+10.
+click on id=custom-search OK
+17:21:27
+11.
+pause with value 5000 OK
+17:22:01
+12.
+type on id=custom-search with value computer science OK
+17:22:03
+13.
+pause with value 5000 OK
+17:22:07
+14.
+click on css=#id00560 a OK
+17:22:10
+15.
+close OK
+17:22:13
+'1' completed successfully
+17:22:13
+
+Running '2'
+17:30:00
+1.
+open on / OK
+17:30:00
+2.
+pause with value 5000 OK
+17:30:03
+3.
+setWindowSize on 1554x840 OK
+17:30:06
+4.
+pause with value 5000 OK
+17:30:09
+5.
+mouseOver on id=megaLink-study OK
+17:30:12
+6.
+pause with value 5000 OK
+17:30:53
+7.
+click on css=.search-icon > span OK
+17:30:56
+8.
+pause with value 5000 OK
+17:30:59
+9.
+click on id=searchBox OK
+17:31:02
+10.
+pause with value 5000 OK
+17:31:05
+11.
+type on id=searchBox with value computer science OK
+17:31:08
+12.
+pause with value 5000 OK
+17:31:11
+13.
+click on css=.searchInputWrapper2 > input OK
+17:31:14
+14.
+pause with value 5000 OK
+17:31:17
+15.
+click on linkText=Department of Computer Science - The University of Manchester OK
+17:31:20
+16.
+pause with value 5000 OK
+17:32:08
+17.
+click on linkText=Undergraduate courses (2026 entry) OK
+17:32:11
+18.
+pause with value 5000 OK
+17:32:36
+19.
+click on id=customSearch OK
+17:32:39
+20.
+pause with value 5000 OK
+17:33:03
+21.
+type on id=customSearch with value computer science OK
+17:33:06
+22.
+pause with value 5000 OK
+17:33:09
+23.
+click on css=#id00560 a OK
+17:33:12
+24.
+pause with value 5000 OK
+17:33:16
+25.
+close OK
+17:33:19
+'2' completed successfully
+
+Running '3'
+17:43:25
+1.
+open on /study/student-terms-and-conditions/ OK
+17:43:26
+2.
+pause with value 5000 OK
+17:43:29
+3.
+setWindowSize on 1554x840 OK
+17:43:32
+4.
+pause with value 5000 OK
+17:43:35
+5.
+click on linkText=Undergraduate OK
+17:43:38
+6.
+pause with value 5000 OK
+17:44:05
+7.
+click on linkText=Courses OK
+17:44:08
+8.
+pause with value 5000 OK
+17:44:41
+9.
+click on css=.more OK
+17:44:44
+10.
+pause with value 5000 OK
+17:45:17
+11.
+type on id=custom-search with value computer science OK
+17:45:20
+12.
+pause with value 5000 OK
+17:45:58
+13.
+click on css=#course-search-buttons > input:nth-child(1) OK
+17:46:01
+14.
+pause with value 5000 OK
+17:46:05
+15.
+click on css=#id00560 a OK
+17:46:08
+16.
+pause with value 5000 OK
+17:46:45
+17.
+close OK
+17:46:48
+'3' completed successfully

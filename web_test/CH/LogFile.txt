@@ -1,0 +1,177 @@
+Running '用户故事1：-正常路径-目的地Computer Science'
+10:34:36
+1.open on / OK
+10:34:37
+2.setWindowSize on 1119x911 OK
+10:34:37
+3.waitForElementPresent on id=megaLink-study with value 10000 OK
+10:34:37
+4.mouseOver on id=megaLink-study OK
+10:34:47
+5.assertText on id=megaLink-study with value Study OK
+10:34:47
+7.click on id=megaLink-study OK
+10:34:47
+9.click on linkText=Undergraduate OK
+10:34:52
+11.click on linkText=View all courses OK
+10:34:59
+12.runScript on window.scrollTo(0,75) OK
+10:34:59
+14.click on css=.breadcrumbItem:nth-child(1) > a OK
+10:35:04
+16.click on css=.search-icon > span OK
+10:35:11
+17.type on id=searchBox with value Computer Science OK
+10:35:13
+18.click on css=.searchInputWrapper2 > input OK
+10:35:15
+20.assertText on css=h1 with value Search OK
+10:35:23
+21.mouseOver on id=megaLink-study OK
+10:35:26
+22.click on linkText=Undergraduate OK
+10:35:28
+24.click on css=.label OK
+10:35:37
+25.type on id=courseKeywords with value Computer Science OK
+10:35:39
+26.click on name=submit OK
+10:35:41
+27.runScript on window.scrollTo(0,184) OK
+10:35:43
+29.click on css=#id00560 a OK
+10:35:52
+30.runScript on window.scrollTo(0,0) OK
+10:35:54
+32.click on css=h1 OK
+10:36:05
+33.assertText on css=h1 with value BSc Computer Science OK
+10:36:07
+34.close on / OK
+10:36:09
+'用户故事1：-正常路径-目的地Computer Science' completed successfully
+10:36:09
+Running '用户故事2：-其他路径-目的地Computer Science'
+10:36:09
+1.open on / OK
+10:36:10
+2.setWindowSize on 1119x911 OK
+10:36:10
+3.waitForElementPresent on id=megaLink-study with value 10000 OK
+10:36:11
+4.click on css=.search-icon > span OK
+10:36:15
+6.type on id=searchBox with value Computer Science OK
+10:36:20
+7.click on css=.searchInputWrapper2 > input OK
+10:36:22
+8.click on linkText=Women and gender-diversity in computer science - Department of Computer Science - The University of Manchester OK
+10:36:24
+9.runScript on window.scrollTo(0,0) OK
+10:36:30
+11.mouseOver on linkText=Study OK
+10:36:42
+12.click on linkText=Undergraduate OK
+10:36:42
+13.assertText on css=h1 with value Undergraduate OK
+10:36:42
+14.click on linkText=Courses OK
+10:36:48
+16.click on css=.mainLogo img OK
+10:36:53
+17.mouseOver on id=megaLink-study OK
+10:36:53
+18.click on css=#panel-study-undergraduate li:nth-child(1) > a OK
+10:36:57
+19.runScript on window.scrollTo(0,756) OK
+10:36:57
+20.click on css=.more OK
+10:37:02
+21.runScript on window.scrollTo(0,126) OK
+10:37:02
+23.click on id=custom-search OK
+10:37:11
+24.type on id=custom-search with value Computer Science OK
+10:37:11
+25.click on css=#course-search-buttons > input:nth-child(1) OK
+10:37:11
+26.runScript on window.scrollTo(0,424) OK
+10:37:12
+27.click on css=#id00560 a OK
+10:37:17
+28.mouseOver on linkText=2026 entry OK
+10:37:18
+29.mouseOut on linkText=2026 entry OK
+10:37:26
+30.runScript on window.scrollTo(0,0) OK
+10:37:27
+31.click on css=h1 OK
+10:37:27
+32.assertText on css=h1 with value BSc Computer Science OK
+10:37:28
+33.close OK
+10:37:28
+'用户故事2：-其他路径-目的地Computer Science' completed successfully
+10:37:28
+Running '用户故事3：-异常路径-目的地Computer Science'
+10:37:28
+1.open on / OK
+10:37:28
+2.setWindowSize on 1119x911 OK
+10:37:28
+3.mouseOver on id=megaLink-study OK
+10:37:28
+5.click on css=#panel-study-masters li:nth-child(1) > a OK
+10:37:34
+6.click on css=.primaryLeftNavNew .breadcrumbItem:nth-child(3) > a OK
+10:37:34
+8.click on css=.label OK
+10:37:45
+9.mouseOver on name=submit OK
+10:37:46
+10.type on id=courseKeywords with value Computer Science OK
+10:37:47
+11.click on name=submit OK
+10:37:47
+13.click on css=#id21573 a OK
+10:37:52
+14.click on css=h1 OK
+10:37:55
+15.assertNotText on css=h1 with value Computer Science OK
+10:38:00
+17.mouseOver on id=megaLink-study OK
+10:38:01
+18.click on css=#panel-study-undergraduate li:nth-child(1) > a OK
+10:38:01
+19.click on css=.primaryLeftNavNew .breadcrumbItem:nth-child(2) > a OK
+10:38:01
+20.click on linkText=Undergraduate OK
+10:38:07
+22.click on linkText=Courses OK
+10:38:17
+23.runScript on window.scrollTo(0,525) OK
+10:38:17
+24.waitForElementPresent on id=megaLink-study with value 10000 OK
+10:38:22
+25.click on css=.more OK
+10:38:22
+26.mouseOver on id=advanced-toggle OK
+10:38:23
+27.click on id=custom-search OK
+10:38:27
+28.type on id=custom-search with value Computer Science OK
+10:38:27
+29.click on css=#course-search-buttons > input:nth-child(1) OK
+10:38:27
+30.click on css=#id00560 a OK
+10:38:29
+31.runScript on window.scrollTo(0,0) OK
+10:38:34
+33.click on css=h1 OK
+10:38:43
+34.assertText on css=h1 with value BSc Computer Science OK
+10:38:43
+35.close OK
+10:38:43
+'用户故事3：-异常路径-目的地Computer Science' completed successfully

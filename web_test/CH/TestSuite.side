@@ -1,0 +1,1129 @@
+{
+  "id": "e396c887-4a51-4239-8b9c-7ae3ff5abc76",
+  "version": "2.0",
+  "name": "TestSuite",
+  "url": "https://www.manchester.ac.uk",
+  "tests": [{
+    "id": "390bf0c1-ec56-462f-ba79-88bb0ef0d532",
+    "name": "用户故事1：-正常路径-目的地Computer Science",
+    "commands": [{
+      "id": "6951161b-e31f-4258-a023-54ef8a0c4ea6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51bb59b6-c38e-4e64-bcfc-fe4c725e2ed1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1119x911",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a1519ba-3033-41de-a2e5-80076c781476",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=megaLink-study",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "682ab589-e7ff-4f5e-baf5-afeebf27165a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=megaLink-study",
+      "targets": [
+        ["id=megaLink-study", "id"],
+        ["linkText=Study", "linkText"],
+        ["css=#megaLink-study", "css:finder"],
+        ["xpath=//a[contains(text(),'Study')]", "xpath:link"],
+        ["xpath=//a[@id='megaLink-study']", "xpath:attributes"],
+        ["xpath=//nav[@id='navigation']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Study')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8ba7c49-a389-4cc9-907e-3aedbadeb2c2",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=megaLink-study",
+      "targets": [
+        ["id=megaLink-study", "id"],
+        ["linkText=Study", "linkText"],
+        ["css=#megaLink-study", "css:finder"],
+        ["xpath=//a[contains(text(),'Study')]", "xpath:link"],
+        ["xpath=//a[@id='megaLink-study']", "xpath:attributes"],
+        ["xpath=//nav[@id='navigation']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Study')]", "xpath:innerText"]
+      ],
+      "value": "Study"
+    }, {
+      "id": "01c0dded-87e7-402e-a6ec-ff251365c214",
+      "comment": "",
+      "command": "//点击study",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9d99564-ff67-469f-829a-2a9f411924af",
+      "comment": "",
+      "command": "click",
+      "target": "id=megaLink-study",
+      "targets": [
+        ["id=megaLink-study", "id"],
+        ["linkText=Study", "linkText"],
+        ["css=#megaLink-study", "css:finder"],
+        ["xpath=//a[contains(text(),'Study')]", "xpath:link"],
+        ["xpath=//a[@id='megaLink-study']", "xpath:attributes"],
+        ["xpath=//nav[@id='navigation']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Study')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7a4edc5-5a5e-406b-8bba-2e8cd4a322a7",
+      "comment": "",
+      "command": "//点击Undergraduate",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1299f306-8018-429b-88b8-233880f7dece",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Undergraduate",
+      "targets": [
+        ["linkText=Undergraduate", "linkText"],
+        ["css=li:nth-child(1) .text > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Undergraduate')])[4]", "xpath:link"],
+        ["xpath=//div[@id='breadcrumb-section-menu-container']/nav[2]/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/study/undergraduate/')])[16]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3673a9b3-bcd4-4dd5-9a5d-851929c4a2e2",
+      "comment": "",
+      "command": "//点击浏览所有课程",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7886388-f933-429d-9001-592542f4d984",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View all courses",
+      "targets": [
+        ["linkText=View all courses", "linkText"],
+        ["css=.link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'View all courses')]", "xpath:link"],
+        ["xpath=//form[@id='courseFinder']/fieldset/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/undergraduate/courses/2026/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View all courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3266a88d-84ac-46d9-8e78-20281abcefe5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,75)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5f13199-e36b-4276-ab02-600cad954663",
+      "comment": "",
+      "command": "//点击home",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37b3d4c8-aaaf-4825-a98b-f93aba885026",
+      "comment": "",
+      "command": "click",
+      "target": "css=.breadcrumbItem:nth-child(1) > a",
+      "targets": [
+        ["css=.breadcrumbItem:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Home')])[4]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[149]", "xpath:href"],
+        ["xpath=//article/div[3]/div/nav/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c68e5910-a7ce-4bae-a0a3-ec65d6ebeaee",
+      "comment": "",
+      "command": "//搜索Computer Science",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "893ed556-4222-4ffb-9416-d9066e88f5a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-icon > span",
+      "targets": [
+        ["css=.search-icon > span", "css:finder"],
+        ["xpath=//div[@id='headerContent-container']/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4542f977-de4c-46f8-9f73-40910764bae1",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchBox",
+      "targets": [
+        ["id=searchBox", "id"],
+        ["name=q", "name"],
+        ["css=#searchBox", "css:finder"],
+        ["xpath=//input[@id='searchBox']", "xpath:attributes"],
+        ["xpath=//form[@id='website-header-search']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Computer Science"
+    }, {
+      "id": "aa472439-2fd8-4483-b82d-f89bc0137f49",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchInputWrapper2 > input",
+      "targets": [
+        ["css=.searchInputWrapper2 > input", "css:finder"],
+        ["xpath=//input[@value='Search']", "xpath:attributes"],
+        ["xpath=//form[@id='website-header-search']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8101aae0-f4ed-4693-885a-da0e2c843dbc",
+      "comment": "",
+      "command": "//断言search",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fd4f5ee-40e5-443c-8f28-c78123497975",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": "Search"
+    }, {
+      "id": "ce227059-9c1f-423a-9748-f3d12f9bb55d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=megaLink-study",
+      "targets": [
+        ["id=megaLink-study", "id"],
+        ["linkText=Study", "linkText"],
+        ["css=#megaLink-study", "css:finder"],
+        ["xpath=//a[contains(text(),'Study')]", "xpath:link"],
+        ["xpath=//a[@id='megaLink-study']", "xpath:attributes"],
+        ["xpath=//nav[@id='navigation']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Study')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1921fa67-7a21-4f04-8c45-ae41327f497f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Undergraduate",
+      "targets": [
+        ["linkText=Undergraduate", "linkText"],
+        ["css=#panel-study-undergraduate .first-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Undergraduate')]", "xpath:link"],
+        ["xpath=//div[@id='panel-study-undergraduate']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/undergraduate/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Undergraduate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc80efe9-66be-4051-afee-5207e1060cff",
+      "comment": "",
+      "command": "//搜索Computer Science",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e10bde88-cf23-4f96-aa02-27ea730014a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.label",
+      "targets": [
+        ["css=.label", "css:finder"],
+        ["xpath=//form[@id='courseFinder']/fieldset/div/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Search undergraduate courses for 2026 entry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f35962e2-4e00-4208-828e-8e0bfe0629ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=courseKeywords",
+      "targets": [
+        ["id=courseKeywords", "id"],
+        ["name=k", "name"],
+        ["css=#courseKeywords", "css:finder"],
+        ["xpath=//input[@id='courseKeywords']", "xpath:attributes"],
+        ["xpath=//form[@id='courseFinder']/fieldset/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "Computer Science"
+    }, {
+      "id": "84ad9aee-8c02-441f-8c59-f2f043e85956",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.search", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='courseFinder']/fieldset/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f13e5cb7-e945-4416-9fca-213738fb6c80",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,184)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b732cd9-f6b5-491f-aa5e-65d0f9b3e76a",
+      "comment": "",
+      "command": "//查看Computer Science详情页",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2aba38d6-8dc5-4fa6-b2b7-7ee66708806d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id00560 a",
+      "targets": [
+        ["css=#id00560 a", "css:finder"],
+        ["xpath=//li[@id='id00560']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '00560/bsc-computer-science/')]", "xpath:href"],
+        ["xpath=//li[81]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cec49af2-fcee-409a-bf43-8e5ec85be11c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be042a9e-0cfb-4949-b989-00f8843e4a92",
+      "comment": "",
+      "command": "//断言Computer Science课程详情页",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4eb476b9-99d8-44d9-9043-6bd0aeb441f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='fact-file']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'BSc Computer Science')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c8e072d-3ab9-4c19-a87b-01e0361e9ed2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='fact-file']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'BSc Computer Science')]", "xpath:innerText"]
+      ],
+      "value": "BSc Computer Science"
+    }, {
+      "id": "6394c135-bd4d-4b39-b4d6-0f91662b7006",
+      "comment": "",
+      "command": "close",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "00c7765d-6073-432f-9f87-3f2085caf3bc",
+    "name": "用户故事2：-其他路径-目的地Computer Science",
+    "commands": [{
+      "id": "a2563307-a04a-4bd8-b9c4-13491b9ba194",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "050d4988-099d-4bb6-84b0-8bdb908a00a3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1119x911",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e6c68f8-145a-481d-b2e3-a3022fb46fe9",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=megaLink-study",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "83bb5bad-5319-4a47-99b6-e3ab944acee0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-icon > span",
+      "targets": [
+        ["css=.search-icon > span", "css:finder"],
+        ["xpath=//div[@id='headerContent-container']/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "612c8209-93c4-488a-8d1e-3033f6dd82ce",
+      "comment": "",
+      "command": "//搜索Computer Science",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd9a0573-5284-4f04-a09b-e60c7509ae95",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchBox",
+      "targets": [
+        ["id=searchBox", "id"],
+        ["name=q", "name"],
+        ["css=#searchBox", "css:finder"],
+        ["xpath=//input[@id='searchBox']", "xpath:attributes"],
+        ["xpath=//form[@id='website-header-search']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Computer Science"
+    }, {
+      "id": "0aad1237-7448-4294-941a-f5beab8826ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchInputWrapper2 > input",
+      "targets": [
+        ["css=.searchInputWrapper2 > input", "css:finder"],
+        ["xpath=//input[@value='Search']", "xpath:attributes"],
+        ["xpath=//form[@id='website-header-search']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c95592ce-b953-451b-aca5-080c81c844e1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Women and gender-diversity in computer science - Department of Computer Science - The University of Manchester",
+      "targets": [
+        ["linkText=Women and gender-diversity in computer science - Department of Computer Science - The University of Manchester", "linkText"],
+        ["css=dt:nth-child(1) > .st-search-result-link", "css:finder"],
+        ["xpath=//dl[@id='st-results-container']/dt/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.cs.manchester.ac.uk/connect/women-and-gender-diversity/')]", "xpath:href"],
+        ["xpath=//dt/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Women and gender-diversity in computer science - Department of Computer Science - The University of Manchester')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5535c79-de5b-4d62-b019-fd06c25adf1b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd4cac60-d49f-489e-a5aa-ae62bd5d27e0",
+      "comment": "",
+      "command": "//悬停study",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63ef5647-e628-4f7e-a441-3d9daff67181",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Study",
+      "targets": [
+        ["linkText=Study", "linkText"],
+        ["css=.hover > .megaLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Study')]", "xpath:link"],
+        ["xpath=//nav[@id='navigation']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/')]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Study')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f693ff81-35c8-4884-b1d4-7f23f385b681",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Undergraduate",
+      "targets": [
+        ["linkText=Undergraduate", "linkText"],
+        ["css=.hover .first-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Undergraduate')]", "xpath:link"],
+        ["xpath=//nav[@id='navigation']/ul/li[2]/div/div/div/p/strong/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/undergraduate/')]", "xpath:href"],
+        ["xpath=//strong/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Undergraduate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff346037-8822-4155-a0db-ab08186f1245",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Undergraduate')]", "xpath:innerText"]
+      ],
+      "value": "Undergraduate"
+    }, {
+      "id": "a44621e6-1257-479a-a6d2-fc2e378db601",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Courses",
+      "targets": [
+        ["linkText=Courses", "linkText"],
+        ["css=.sectionHeader:nth-child(3) li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Courses')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/study/undergraduate/courses/')])[2]", "xpath:href"],
+        ["xpath=//li[3]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c26bcd2a-c79c-4f42-8496-28795134aae4",
+      "comment": "",
+      "command": "//返回主页",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a001878-6ce5-4741-82df-ed4a7889a682",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mainLogo img",
+      "targets": [
+        ["css=.mainLogo img", "css:finder"],
+        ["xpath=//img[@alt='The University of Manchester']", "xpath:img"],
+        ["xpath=//div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c6f24a2-5ee4-4068-9239-1b7557614410",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=megaLink-study",
+      "targets": [
+        ["id=megaLink-study", "id"],
+        ["linkText=Study", "linkText"],
+        ["css=#megaLink-study", "css:finder"],
+        ["xpath=//a[contains(text(),'Study')]", "xpath:link"],
+        ["xpath=//a[@id='megaLink-study']", "xpath:attributes"],
+        ["xpath=//nav[@id='navigation']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Study')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5868e0a9-624a-4ecd-9776-8752923c1b95",
+      "comment": "",
+      "command": "click",
+      "target": "css=#panel-study-undergraduate li:nth-child(1) > a",
+      "targets": [
+        ["css=#panel-study-undergraduate li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='panel-study-undergraduate']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/undergraduate/courses/')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd18175c-0485-4772-964e-5a6984abf3b6",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,756)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3913622-96a4-43f1-891a-1eef06abb472",
+      "comment": "",
+      "command": "click",
+      "target": "css=.more",
+      "targets": [
+        ["css=.more", "css:finder"],
+        ["xpath=//a[@id='promo-994069']/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//a/div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Browse our courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "71f03ec7-5c12-4f84-8e59-b86382cd37d9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,126)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28e05c19-cec4-4f2d-af83-c0c2f0bf0473",
+      "comment": "",
+      "command": "//搜索Computer Science",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f07a9477-c8d7-4a83-9701-bafe161ea061",
+      "comment": "",
+      "command": "click",
+      "target": "id=custom-search",
+      "targets": [
+        ["id=custom-search", "id"],
+        ["name=k", "name"],
+        ["css=#custom-search", "css:finder"],
+        ["xpath=//input[@id='custom-search']", "xpath:attributes"],
+        ["xpath=//form[@id='course-search']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ed72dd1-353c-40d2-bb4d-57368355057d",
+      "comment": "",
+      "command": "type",
+      "target": "id=custom-search",
+      "targets": [
+        ["id=custom-search", "id"],
+        ["name=k", "name"],
+        ["css=#custom-search", "css:finder"],
+        ["xpath=//input[@id='custom-search']", "xpath:attributes"],
+        ["xpath=//form[@id='course-search']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "Computer Science"
+    }, {
+      "id": "dc4f0ae5-410f-4ec0-8572-7d1c1c313f47",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-search-buttons > input:nth-child(1)",
+      "targets": [
+        ["css=#course-search-buttons > input:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@value='Search'])[2]", "xpath:attributes"],
+        ["xpath=//p[@id='course-search-buttons']/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0ec4d2c-2597-41ee-8274-a97d7d2a8309",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,424)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d137bb23-c6ac-4d97-851f-7b85f0c9bfd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id00560 a",
+      "targets": [
+        ["css=#id00560 a", "css:finder"],
+        ["xpath=//li[@id='id00560']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '00560/bsc-computer-science/')]", "xpath:href"],
+        ["xpath=//li[81]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f08202e-82e0-4d37-a6db-bb31321068c3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=2026 entry",
+      "targets": [
+        ["linkText=2026 entry", "linkText"],
+        ["css=.breadcrumbNav li:nth-child(5) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'2026 entry')])[2]", "xpath:link"],
+        ["xpath=//div[@id='breadcrumb-share-container']/nav/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/study/undergraduate/courses/2026/')])[2]", "xpath:href"],
+        ["xpath=//article/div/nav/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80a6f247-a6d3-4f1d-aed0-e285c8fe3d35",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=2026 entry",
+      "targets": [
+        ["linkText=2026 entry", "linkText"],
+        ["css=.breadcrumbNav li:nth-child(5) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'2026 entry')])[2]", "xpath:link"],
+        ["xpath=//div[@id='breadcrumb-share-container']/nav/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/study/undergraduate/courses/2026/')])[2]", "xpath:href"],
+        ["xpath=//article/div/nav/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e24343fe-94e4-43dd-abf0-17e7994f91ed",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd939ca1-86ee-4765-81ac-f892d664d1b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='fact-file']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'BSc Computer Science')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a46d3a9-91d5-473b-a2ab-89b23625c86b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='fact-file']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'BSc Computer Science')]", "xpath:innerText"]
+      ],
+      "value": "BSc Computer Science"
+    }, {
+      "id": "cca25e52-ef80-4ece-be99-981f364da2ae",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fd43955e-767f-4711-8105-bfdd58145038",
+    "name": "用户故事3：-异常路径-目的地Computer Science",
+    "commands": [{
+      "id": "cfa00477-eb6b-48eb-a627-42935395e53e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df56bac7-11b2-4a9e-af14-1274e3b30e70",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1119x911",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5a2a4fa-2b5f-4b17-ae2c-7946efa5d536",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=megaLink-study",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35548d7c-bdfd-4ed6-a3c5-4542914d72ac",
+      "comment": "",
+      "command": "//点击study下的course页签",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "054d4a5c-a888-490f-98e1-4eba5fe8226e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#panel-study-masters li:nth-child(1) > a",
+      "targets": [
+        ["css=#panel-study-masters li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='panel-study-masters']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/masters/courses/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31346897-6f2a-4012-a59d-6fcf85fc5c4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primaryLeftNavNew .breadcrumbItem:nth-child(3) > a",
+      "targets": [
+        ["css=.primaryLeftNavNew .breadcrumbItem:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(@href, '/study/masters/')])[16]", "xpath:href"],
+        ["xpath=//article/div[3]/div/nav/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "671a9067-53a6-4f7b-bdb4-0a16a5f31d5e",
+      "comment": "",
+      "command": "//搜索硕士课程",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9b4aaf0-0914-4def-89c0-ad208c7989d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.label",
+      "targets": [
+        ["css=.label", "css:finder"],
+        ["xpath=//form[@id='courseFinder']/fieldset/div/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1739f90-bbcb-42c1-bcfc-fdf355087d29",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.search", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='courseFinder']/fieldset/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f786cc8e-5f16-4088-a4ca-ee050f45fc0e",
+      "comment": "",
+      "command": "type",
+      "target": "id=courseKeywords",
+      "targets": [
+        ["id=courseKeywords", "id"],
+        ["name=k", "name"],
+        ["css=#courseKeywords", "css:finder"],
+        ["xpath=//input[@id='courseKeywords']", "xpath:attributes"],
+        ["xpath=//form[@id='courseFinder']/fieldset/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "Computer Science"
+    }, {
+      "id": "ee32290d-ad60-4acc-825f-010da7d38d96",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.search", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='courseFinder']/fieldset/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "faaf1a1b-a4d5-41c8-9c90-0344c222b8ce",
+      "comment": "",
+      "command": "//搜索结果不存在",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc94c4be-5ac6-4133-a7c6-328ab1cbe323",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id21573 a",
+      "targets": [
+        ["css=#id21573 a", "css:finder"],
+        ["xpath=//li[@id='id21573']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '21573/msc-advanced-computer-science/')]", "xpath:href"],
+        ["xpath=//li[7]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cc58012-625b-40a8-82d6-5154db6bbe99",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='fact-file']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'MSc Advanced Computer Science')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ddf230d-e13d-4ca4-89b8-dd3e07f6ba6d",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='fact-file']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'MSc Advanced Computer Science')]", "xpath:innerText"]
+      ],
+      "value": "Computer Science"
+    }, {
+      "id": "ead59014-d960-4c9f-aa74-2ea43271ead8",
+      "comment": "",
+      "command": "//返回study",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "828fb691-5348-411d-9aba-c46a035615f2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=megaLink-study",
+      "targets": [
+        ["id=megaLink-study", "id"],
+        ["linkText=Study", "linkText"],
+        ["css=#megaLink-study", "css:finder"],
+        ["xpath=//a[contains(text(),'Study')]", "xpath:link"],
+        ["xpath=//a[@id='megaLink-study']", "xpath:attributes"],
+        ["xpath=//nav[@id='navigation']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Study')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aff75ee7-bac3-4a31-be53-c13e92dfa3f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#panel-study-undergraduate li:nth-child(1) > a",
+      "targets": [
+        ["css=#panel-study-undergraduate li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='panel-study-undergraduate']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/study/undergraduate/courses/')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c99ab968-68d2-4835-9e3a-0ddb5b2ce169",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primaryLeftNavNew .breadcrumbItem:nth-child(2) > a",
+      "targets": [
+        ["css=.primaryLeftNavNew .breadcrumbItem:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Study')])[6]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/study/')])[68]", "xpath:href"],
+        ["xpath=//article/div[3]/div/nav/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9095e1f4-9ede-4e33-b44a-3862663cb685",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Undergraduate",
+      "targets": [
+        ["linkText=Undergraduate", "linkText"],
+        ["css=li:nth-child(1) .text > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Undergraduate')])[4]", "xpath:link"],
+        ["xpath=//div[@id='breadcrumb-section-menu-container']/nav[2]/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/study/undergraduate/')])[16]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4408eaf7-4ff5-41a7-9648-07a4f356bdcf",
+      "comment": "",
+      "command": "//点击所有课程",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ea92e26-4db0-4407-a51f-e3b2b586cf0a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Courses",
+      "targets": [
+        ["linkText=Courses", "linkText"],
+        ["css=li:nth-child(1) .text > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Courses')])[5]", "xpath:link"],
+        ["xpath=//div[@id='breadcrumb-section-menu-container']/nav[2]/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/study/undergraduate/courses/')])[5]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4759fc1-3678-4c6f-8aed-40aace655560",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,525)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ac1abfa-5e98-493a-aedb-ca05a7fd8d65",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=megaLink-study",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "06adcb30-5af6-4cfb-a7dc-9124eded3931",
+      "comment": "",
+      "command": "click",
+      "target": "css=.more",
+      "targets": [
+        ["css=.more", "css:finder"],
+        ["xpath=//a[@id='promo-994069']/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//a/div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Browse our courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51521877-aad2-4ae4-aba4-e07b08660291",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=advanced-toggle",
+      "targets": [
+        ["id=advanced-toggle", "id"],
+        ["css=#advanced-toggle", "css:finder"],
+        ["xpath=//input[@id='advanced-toggle']", "xpath:attributes"],
+        ["xpath=//p[@id='course-search-buttons']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d67dfcd4-6acd-41c9-9315-1959b1bc467c",
+      "comment": "",
+      "command": "click",
+      "target": "id=custom-search",
+      "targets": [
+        ["id=custom-search", "id"],
+        ["name=k", "name"],
+        ["css=#custom-search", "css:finder"],
+        ["xpath=//input[@id='custom-search']", "xpath:attributes"],
+        ["xpath=//form[@id='course-search']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2242048-6bcd-426c-bf9c-5a7699762b15",
+      "comment": "",
+      "command": "type",
+      "target": "id=custom-search",
+      "targets": [
+        ["id=custom-search", "id"],
+        ["name=k", "name"],
+        ["css=#custom-search", "css:finder"],
+        ["xpath=//input[@id='custom-search']", "xpath:attributes"],
+        ["xpath=//form[@id='course-search']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "Computer Science"
+    }, {
+      "id": "15c172c3-4155-46fb-bd74-15dba8c4cdc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-search-buttons > input:nth-child(1)",
+      "targets": [
+        ["css=#course-search-buttons > input:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@value='Search'])[2]", "xpath:attributes"],
+        ["xpath=//p[@id='course-search-buttons']/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f670770-a1ed-4611-8748-7c6495871e4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id00560 a",
+      "targets": [
+        ["css=#id00560 a", "css:finder"],
+        ["xpath=//li[@id='id00560']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '00560/bsc-computer-science/')]", "xpath:href"],
+        ["xpath=//li[81]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db3d6670-de84-466e-a777-a45bda0c64d5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b6a0a82-4094-49ae-a7a1-e16eb78c3c5f",
+      "comment": "",
+      "command": "//断言Computer Science",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64e6b758-6492-4e39-919c-2e6e08b10916",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='fact-file']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'BSc Computer Science')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2913bc1b-6b1b-46c5-87f1-b4721c79348c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='fact-file']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'BSc Computer Science')]", "xpath:innerText"]
+      ],
+      "value": "BSc Computer Science"
+    }, {
+      "id": "f422c42c-89f9-4c0e-ba88-d72a00cd61dd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cbee2d74-bae4-4d0c-9d13-c79e7779d596",
+    "name": "Computer Science Suite-001",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["390bf0c1-ec56-462f-ba79-88bb0ef0d532"]
+  }, {
+    "id": "5b42fe66-6285-45a5-ac5a-cff726cd3939",
+    "name": "Computer Science Suite-002",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["00c7765d-6073-432f-9f87-3f2085caf3bc"]
+  }, {
+    "id": "d4765fca-0a5a-4147-8c00-dd6fb1c5aa76",
+    "name": "Computer Science Suite-003",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fd43955e-767f-4711-8105-bfdd58145038"]
+  }],
+  "urls": ["https://www.manchester.ac.uk/"],
+  "plugins": []
+}

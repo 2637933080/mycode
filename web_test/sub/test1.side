@@ -1,0 +1,164 @@
+{
+  "id": "47e50ebd-8a76-4807-8838-25468afac493",
+  "version": "2.0",
+  "name": "test",
+  "url": "https://www.manchester.ac.uk",
+  "tests": [{
+    "id": "283c9721-e212-4464-9b94-6ab925cd5e09",
+    "name": "1",
+    "commands": [{
+      "id": "d101e54a-8068-40bf-8753-9e0fde36847d",
+      "comment": "",
+      "command": "open",
+      "target": "/study/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58685edf-d891-44c2-8f88-5d6c08523e92",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1555x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c574d95e-afb3-425a-ba0e-ff263b62181a",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "f384a542-2ed8-4dcb-bd95-bf58d64e3023",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Undergraduate",
+      "targets": [
+        ["linkText=Undergraduate", "linkText"],
+        ["css=li:nth-child(1) .text > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Undergraduate')])[4]", "xpath:link"],
+        ["xpath=//div[@id='breadcrumb-section-menu-container']/nav[2]/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/study/undergraduate/')])[16]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ab8e881-6c86-4c78-ae3f-f020bd301dc0",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "9c57d93a-60ad-43b3-9bc4-5984eb0fea2f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Courses",
+      "targets": [
+        ["linkText=Courses", "linkText"],
+        ["css=li:nth-child(1) .text > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Courses')])[5]", "xpath:link"],
+        ["xpath=//div[@id='breadcrumb-section-menu-container']/nav[2]/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/study/undergraduate/courses/')])[5]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75c5f88f-c0bb-43c9-af03-7a325f6d78f8",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "305254e2-6562-44a6-ab06-075651aff6b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.more",
+      "targets": [
+        ["css=.more", "css:finder"],
+        ["xpath=//a[@id='promo-994069']/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//a/div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Browse our courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbd22d3a-5242-4c56-a619-2c4ae0616dda",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "efadbfa6-7875-4e99-9f5e-96e4d06d3622",
+      "comment": "",
+      "command": "click",
+      "target": "id=custom-search",
+      "targets": [
+        ["id=custom-search", "id"],
+        ["name=k", "name"],
+        ["css=#custom-search", "css:finder"],
+        ["xpath=//input[@id='custom-search']", "xpath:attributes"],
+        ["xpath=//form[@id='course-search']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6ec461e-6b28-4723-96dc-9dd19a229bb3",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "843f175c-4f39-4bbf-84e4-3b44de816302",
+      "comment": "",
+      "command": "type",
+      "target": "id=custom-search",
+      "targets": [
+        ["id=custom-search", "id"],
+        ["name=k", "name"],
+        ["css=#custom-search", "css:finder"],
+        ["xpath=//input[@id='custom-search']", "xpath:attributes"],
+        ["xpath=//form[@id='course-search']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "computer science"
+    }, {
+      "id": "b213f971-2b07-4324-b580-8cd9a061edbe",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "f2f7a382-e2a6-45ad-af6a-88251b57bdce",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id00560 a",
+      "targets": [
+        ["css=#id00560 a", "css:finder"],
+        ["xpath=//li[@id='id00560']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '00560/bsc-computer-science/')]", "xpath:href"],
+        ["xpath=//li[81]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ecab925-8190-4af2-906a-db5255efeef9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "21574644-c0e1-44b4-94d4-1666b84d2dc7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://ddy.cug.edu.cn/", "https://www.manchester.ac.uk/"],
+  "plugins": []
+}
